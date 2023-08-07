@@ -347,6 +347,7 @@ const editClinic = (id) => {
 		.then((res) => res.json())
 		.then((data) => {
 			const d = data?.data.clinic;
+			console.log(d ,"da" ,edit_call_center);
 			if (d) {
 				edit_clinic_name.value = d?.clinic_name;
 				edit_clinic_address.value = d?.clinic_address;
